@@ -51,6 +51,7 @@ i#hidenavbar {
   right: 10px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  color: white;
 }
 
 i#hidenavbar:hover {
