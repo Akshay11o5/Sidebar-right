@@ -1,0 +1,103 @@
+.logo {
+  display: block;
+  padding: 20px;
+  left: 0px;
+  margin-bottom: 30px;
+}
+
+.togglesidebar {
+  cursor: pointer;
+}
+
+.navigationToggle {
+  position: fixed;
+  color: #fff;
+  padding: 10px;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 300px;
+  background-color: gray;
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  transition: all 0.6s ease-in-out;
+}
+
+.sideNavbarMenu li a:link,
+.sideNavbarMenu li a:visited {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sideNavbarMenu li a:hover {
+  transform: scale(1.1);
+  color: blue;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar.active {
+  right: 0px;
+}
+
+i#hidenavbar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+i#hidenavbar:hover {
+  transform: rotate(90deg);
+}
+
+.sideNavbarMenu li {
+  list-style: none;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  border: 2px solid #000;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.section:nth-of-type(1) {
+  background-color: rgb(228, 71, 97);
+}
+
+.section:nth-of-type(2) {
+  background-color: skyblue;
+}
+
+.section:nth-of-type(3) {
+  background-color: green;
+}
+
+.section:nth-of-type(4) {
+  background-color: orange;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  display: none;
+}
+.backdrop.active {
+  display: block;
+  animation: fadeIn 0.6s ease-in-out;
+}
